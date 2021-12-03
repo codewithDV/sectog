@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.wishlist">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWishList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/barrier9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:itemCount="1"
+        tools:listitem="@layout/wishlistrvdesign" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:backgroundTint="@color/bluelight"
+        app:cornerRadius="@dimen/_10sdp"
+        app:icon="@drawable/cart"
+        app:iconGravity="end"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textButton2"
+        app:layout_constraintTop_toTopOf="@+id/textButton2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="@dimen/_10sdp"
+        app:icon="@drawable/remove"
+        app:iconGravity="end"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="textButton,textButton2"/>
+
+
+    <!-- <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="25dp"
+         android:layout_marginTop="30dp"
+         android:background="@drawable/shapebutton"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/rvWishList">
+
+         <TextView
+             android:id="@+id/tvRemmove"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/monsemibold"
+             android:gravity="center"
+             android:padding="10dp"
+             android:text="Remove"
+             android:textSize="25sp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <ImageView
+             android:id="@+id/ivdust"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:padding="10dp"
+             android:src="@drawable/remove"
+             app:layout_constraintBottom_toBottomOf="@+id/tvRemmove"
+             app:layout_constraintStart_toEndOf="@+id/tvRemmove"
+             app:layout_constraintTop_toTopOf="@+id/tvRemmove" />
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:id="@+id/constraintLayout"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:layout_marginEnd="25dp"
+         android:background="@drawable/shapebutton"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/rvWishList">
+
+         <TextView
+             android:id="@+id/tvMycart"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/monsemibold"
+             android:gravity="center"
+             android:padding="10dp"
+             android:text="Buy no"
+             android:textSize="25sp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <ImageView
+             android:id="@+id/ivMycart"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:padding="10dp"
+             android:src="@drawable/cart"
+             app:layout_constraintBottom_toBottomOf="@+id/tvMycart"
+             app:layout_constraintStart_toEndOf="@+id/tvMycart"
+             app:layout_constraintTop_toTopOf="@+id/tvMycart" />
+     </androidx.constraintlayout.widget.ConstraintLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.sectog.frame.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_fragment_filtert"
+            app:destination="@id/fragment_filtert" />
+        <action
+            android:id="@+id/action_homeFragment_to_productpage_frame"
+            app:destination="@id/productpage_frame" />
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_searchResult2"-->
+<!--            app:destination="@id/searchResult2" />-->
+        <action
+            android:id="@+id/action_homeFragment_to_search_frame"
+            app:destination="@id/search_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.sectog.frame.menuFragment"
+        android:label="fragment_menu2"
+        tools:layout="@layout/fragment_menu2">
+        <action
+            android:id="@+id/action_menuFragment_to_categories2"
+            app:destination="@id/categories2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:label="fragment_cart"
+        android:name="com.example.sectog.frame.CartFragment"
+        tools:layout="@layout/fragment_cart">
+
+
+        <action
+            android:id="@+id/action_cartFragment_to_placeOrder_frame"
+            app:destination="@id/placeOrder_frame" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragLikeNav"
+        android:label="fragment_like"
+        android:name="com.example.sectog.frame.LikeFragment"
+        tools:layout="@layout/fragment_like">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.sectog.frame.profileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_payment_frame"
+            app:destination="@id/payment_frame" />
+        <action
+            android:id="@+id/action_profileFragment_to_fragLikeNav"
+            app:destination="@id/fragLikeNav" />
+        <action
+            android:id="@+id/action_profileFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categories2"
+        android:name="com.example.sectog.frame.Categories2"
+        android:label="Categories2">
+        <action
+            android:id="@+id/action_categories2_to_subCatFrame"
+            app:destination="@id/subCatFrame" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCatFrame"
+        android:name="com.example.sectog.frame.SubCatFrame"
+        android:label="SubCatFrame">
+        <action
+            android:id="@+id/action_subCatFrame_to_brandPageOe"
+            app:destination="@id/brandPageOe" />
+    </fragment>
+    <fragment
+        android:id="@+id/brandPageOe"
+        android:name="com.example.sectog.frame.BrandPageOe"
+        android:label="BrandPageOe" />
+    <fragment
+        android:id="@+id/fragment_filtert"
+        android:name="com.example.sectog.frame.fragment_filtert"
+        android:label="fragment_filtert" >
+        <action
+            android:id="@+id/action_fragment_filtert_to_filter2_frame"
+            app:destination="@id/filter2_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/filter2_frame"
+        android:name="com.example.sectog.frame.filter2_frame"
+        android:label="filter2_frame" />
+    <fragment
+        android:id="@+id/productpage_frame"
+        android:name="com.example.sectog.frame.productpage_frame"
+        android:label="productpage_frame" />
+    <fragment
+        android:id="@+id/search_frame"
+        android:name="com.example.sectog.frame.search_frame"
+        android:label="search_frame" />
+    <fragment
+        android:id="@+id/payment_frame"
+        android:name="com.example.sectog.frame.payment_frame"
+        android:label="payment_frame" >
+        <action
+            android:id="@+id/action_payment_frame_to_sucess_frame"
+            app:destination="@id/sucess_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeOrder_frame"
+        android:name="com.example.sectog.fragment.placeOrder_frame"
+        android:label="placeOrder_frame" >
+
+        <action
+            android:id="@+id/action_placeOrder_frame_to_delivery_frame"
+            app:destination="@id/delivery_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/delivery_frame"
+        android:name="com.example.sectog.frame.delivery_frame"
+        android:label="delivery_frame" >
+        <action
+            android:id="@+id/action_delivery_frame_to_payment_frame"
+            app:destination="@id/payment_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/sucess_frame"
+        android:name="com.example.sectog.frame.sucess_frame"
+        android:label="fragment_sucess_frame"
+        tools:layout="@layout/fragment_sucess_frame" />
+
+
+</navigation>

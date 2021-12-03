@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivSubClothingHistor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/subclothing" />
+
+    <TextView
+        android:id="@+id/tvSubNameHistor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/monsemibold"
+        android:gravity="center"
+        android:text="Kylie Cropped"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSubClothingHistor">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSubProductNamevHistor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/monsemibold"
+        android:gravity="center"
+        android:text="Urban Outfitters"
+        android:textColor="@color/bluelight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubNameHistor">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSubPriceHistor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/monsemibold"
+        android:gravity="center"
+        android:text="$59.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubProductNamevHistor">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvSubPrice2Histor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mon"
+        android:gravity="center"
+        android:text="$59.00"
+        app:layout_constraintStart_toEndOf="@+id/tvSubPriceHistor"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubProductNamevHistor">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivLikeWhiteHistor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivSubClothingHistor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/subclohlike" />
+
+    <ImageView
+        android:id="@+id/ivLikeRedHistor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivSubClothingHistor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/subclolikered" />
+</androidx.constraintlayout.widget.ConstraintLayout>

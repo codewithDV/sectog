@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivCloth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ivwishlist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/monmedium"
+        android:gravity="center"
+        android:text="Jensons Blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ivCloth"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWbrandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mon"
+        android:gravity="center"
+        android:text="Jensons Blue"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/ivCloth"
+        app:layout_constraintTop_toBottomOf="@+id/tvWname" />
+
+    <TextView
+        android:id="@+id/tvWrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="$48.99"
+        app:layout_constraintStart_toEndOf="@+id/ivCloth"
+        app:layout_constraintTop_toBottomOf="@+id/tvWbrandName" />
+
+    <TextView
+        android:id="@+id/tvWratez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="$82.2"
+        app:layout_constraintStart_toEndOf="@+id/ivCloth"
+        app:layout_constraintTop_toBottomOf="@+id/tvWrate" />
+
+    <ImageView
+        android:id="@+id/ivWsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ivwishsign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWsign2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ivwishgreen"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

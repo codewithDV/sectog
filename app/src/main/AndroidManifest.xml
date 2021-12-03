@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sectog">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SectoG">
+        <service
+            android:name=".frame.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".frame.MainActivityauth"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.yourordermain"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.WelocomeA"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.categories2"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.categoriesproduct"
+            android:exported="true"></activity>
+        <activity
+            android:name=".fragment.brandpage1"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.brandpage2"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.subCategories"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.brandpage3"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.SearchResult"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.MainActivityselection"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.wishlist"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.cartitem"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.sizeguide"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.Reviwes"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.filterM"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.Filter2"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.FiltertAct"
+            android:exported="true"></activity>
+        <activity
+            android:name=".fragment.sucess"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.delivery"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.mybagcart"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.confirmation"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.payment"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.yourorders"
+            android:exported="true" />
+        <activity
+            android:name=".Verification"
+            android:exported="true" />
+        <activity
+            android:name=".startwithphone"
+            android:exported="true" />
+        <activity
+            android:name=".collection"
+            android:exported="true" />
+        <activity
+            android:name=".signin"
+            android:exported="true" />
+        <activity
+            android:name=".signup"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+
+    </application>
+
+</manifest>

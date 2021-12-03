@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/subclothing" />
+
+    <TextView
+        android:id="@+id/tvBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/monsemibold"
+        android:gravity="center"
+        android:text="Kylie Cropped"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAcc">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvBagDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/monsemibold"
+        android:gravity="center"
+        android:text="Urban Outfitters"
+        android:textColor="@color/bluelight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBag">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvBagPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/monsemibold"
+        android:gravity="center"
+        android:text="$59.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBagDec">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvBagPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mon"
+        android:gravity="center"
+        android:text="$59.00"
+        app:layout_constraintStart_toEndOf="@+id/tvBagPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvBagDec">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivLikeWhiteBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAcc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/subclohlike" />
+
+    <ImageView
+        android:id="@+id/ivLikeRedBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAcc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/subclolikered" />
+</androidx.constraintlayout.widget.ConstraintLayout>

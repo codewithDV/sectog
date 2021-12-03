@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/splash_frame">
+
+    <fragment
+        android:id="@+id/signin_frame"
+        android:name="com.example.sectog.frame.signin_frame"
+        android:label="fragment_signin_frame"
+        tools:layout="@layout/fragment_signin_frame">
+        <action
+            android:id="@+id/action_signin_frame_to_signup_frame"
+            app:destination="@id/signup_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup_frame"
+        android:name="com.example.sectog.frame.signup_frame"
+        android:label="fragment_signup_frame"
+        tools:layout="@layout/fragment_signup_frame">
+        <action
+            android:id="@+id/action_signup_frame_to_walkthrugh_frame"
+            app:destination="@id/walkthrugh_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/walkthrugh_frame"
+        android:name="com.example.sectog.frame.walkthrugh_frame"
+        android:label="fragment_walkthrugh_frame"
+        tools:layout="@layout/fragment_walkthrugh_frame">
+        <action
+            android:id="@+id/action_walkthrugh_frame_to_startwithphone_frame"
+            app:destination="@id/startwithphone_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/startwithphone_frame"
+        android:name="com.example.sectog.frame.startwithphone_frame"
+        android:label="fragment_startwithphone_frame"
+        tools:layout="@layout/fragment_startwithphone_frame">
+        <action
+            android:id="@+id/action_startwithphone_frame_to_verification_frame"
+            app:destination="@id/verification_frame" />
+    </fragment>
+    <fragment
+        android:id="@+id/verification_frame"
+        android:name="com.example.sectog.frame.verification_frame"
+        android:label="fragment_verification_frame"
+        tools:layout="@layout/fragment_verification_frame" />
+    <fragment
+        android:id="@+id/splash_frame"
+        android:name="com.example.sectog.frame.splash_frame"
+        android:label="fragment_splash_frame"
+        tools:layout="@layout/fragment_splash_frame" >
+        <action
+            android:id="@+id/action_splash_frame_to_signin_frame"
+            app:destination="@id/signin_frame" />
+    </fragment>
+</navigation>
